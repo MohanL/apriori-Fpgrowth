@@ -36,27 +36,7 @@ To run program with dataset
 
 Sample output
 -------------
-data/test.txt
-'1, 2, 3, 4
- 1, 2, 4
- 1, 2
- 2, 3, 4
- 2, 3
- 3, 4
- 2, 4'
-
 $ python FpGrowth.py data/test.txt
-'{}
- ├── 2
- │   ├── 1
- │   ├── 3
- │   └── 4
- │       ├── 1
- │       └── 3
- │           └── 1
- └── 4
-     └── 3
-'
 
 License
 -------
