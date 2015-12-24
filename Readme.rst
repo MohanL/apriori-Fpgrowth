@@ -10,8 +10,8 @@ List of files
 3. Data/ 
 		1.adult.data
 		2.adult.names
-	    3.adult.test
-	    4.old.adult.names
+	    	3.adult.test
+	    	4.old.adult.names
 		5.test.txt
 
 The dataset is a copy of the "Adult Data Set" 
@@ -26,6 +26,30 @@ To run the program with dataset provided and default values for *minSupport* = 0
 To run program with dataset  
 
     python apriori.py|FpGrowth.py  -f [dataset] -s [minsupport] -c [minconfidence]
+
+Sample output
+-------------
+data/test.txt
+1 1, 2, 3, 4
+2 1, 2, 4
+3 1, 2
+4 2, 3, 4
+5 2, 3
+6 3, 4
+7 2, 4
+
+$ python FpGrowth.py data/test.txt
+{}
+├── 2
+│   ├── 1
+│   ├── 3
+│   └── 4
+│       ├── 1
+│       └── 3
+│           └── 1
+└── 4
+    └── 3
+
 
 License
 -------
